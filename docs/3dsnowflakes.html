@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,hight=device-hight,minimum-scale=1.0,maximum-scale=1.0,ser-scalable=none"/>
+<title>3D snowflake</title>
+	
+<style>
+        body{
+            background: #000;
+        }
+        #snow{
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0; 
+            background: url('https://i.loli.net/2021/09/20/G4daCgTjloXuefP.png'),  url('https://i.loli.net/2021/09/20/G4daCgTjloXuefP.png');
+            -webkit-animation: snow 15s linear infinite;
+            animation: snow 15s linear infinite;
+        }
+        @keyframes snow{
+        0% {
+            background-position: 0 0, 0 0;
+        }
+        100% {
+            background-position: 500px 1000px, 500px 500px;
+            }
+        }
+        @-webkit-keyframes snow{
+            0% {
+                background-position: 0 0, 0 0;
+            }
+            100% {
+                background-position: 500px 1000px, 500px 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="snow"></div>
+</body>
+</html>
